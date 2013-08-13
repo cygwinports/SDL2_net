@@ -1,0 +1,21 @@
+NAME="SDL2_net"
+VERSION=2.0.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="SDL network library"
+DESCRIPTION="This is an example portable network library for use with SDL."
+HOMEPAGE="http://www.libsdl.org/projects/SDL_net/"
+SRC_URI="${HOMEPAGE}/release/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="1.2.8-no-winsock.patch"
+
+PKG_NAMES="libSDL2_net2.0_0 libSDL2_net-devel"
+libSDL2_net2_0_0_CONTENTS='usr/bin/cygSDL2_net-2-0-0.dll usr/share/doc/'
+libSDL2_net_devel_CONTENTS='usr/include/ usr/lib/'
+
+DISTCLEANFILES="acinclude.m4"
+
+NO_AUTOHEADER=1
+CYGCONF_ARGS="--disable-gui"
+
+DOCS="*.txt"
+KEEP_LA_FILES="none"
