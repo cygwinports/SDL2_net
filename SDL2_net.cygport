@@ -1,5 +1,5 @@
 NAME="SDL2_net"
-VERSION=2.0.0
+VERSION=2.0.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="SDL network library"
